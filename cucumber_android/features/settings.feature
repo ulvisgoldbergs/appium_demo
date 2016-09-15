@@ -35,9 +35,9 @@
 # https://github.com/cucumber/cucumber/wiki/Feature-Introduction
 
 
-Feature: Version check
-  Settings must display the Android version
+#Feature: Version check
+ # Settings must display the Android version
 
-  Scenario: Settings
-    Given I click about phone
-    Then the Android version is a number
+  #Scenario: Settings
+   # Given I click about phone
+    #Then the Android version is a number

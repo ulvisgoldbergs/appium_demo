@@ -36,3 +36,56 @@ Given /^the Android version is a number$/ do
 
   expect(valid).to eq(true)
 end
+
+Given /^I open compad$/ do
+ $driver_a.find_element(:id, "recent_item_chat_title").click
+ $driver_b.find_element(:id, "recent_item_chat_title").click
+ sleep(2)
+end
+
+Given /^I am chatting and make calls$/ do
+  element_a = $driver_a.find_element(:id, "message_area_edit_text")
+  element_b = $driver_b.find_element(:id, "message_area_edit_text")
+  while(true)
+	begin
+		element_a.click
+		element_a.send_keys("Hello!")
+		$driver_a.find_element(:id, "message_area_send_button").click
+	  #  $driver_b.find_element(:text, "Hello!")
+	    element_b.click
+		element_b.send_keys("Hi!!")
+		$driver_b.find_element(:id, "message_area_send_button").click
+	  #  $driver_a.find_element(:text, "Hi!!")
+	    element_a.send_keys("Are you busy right now?")
+	    $driver_a.find_element(:id, "message_area_send_button").click
+	  #  $driver_b.find_element(:text, "Are you busy right now?")
+	    element_b.send_keys("No, I am free at the moment")
+	    $driver_b.find_element(:id, "message_area_send_button").click
+	  #  $driver_a.find_element(:text, "No, I am free at the moment")
+	    element_a.send_keys("Can I call you?")
+	    $driver_a.find_element(:id, "message_area_send_button").click
+	  #  $driver_b.find_element(:text, "Can I call you?")
+	    element_b.send_keys("Sure!")
+	    $driver_b.find_element(:id, "message_area_send_button").click
+	    $driver_a.back
+	    $driver_a.find_element(:id, "chat_menu_item_call_options").click
+	    sleep(1)
+	    $driver_b.find_element(:id, "accept_button").click
+		sleep(10)
+		$driver_a.find_element(:id, "call_end_button").click
+		element_a.click
+		element_a.send_keys("Thanks for the conversation!")
+		$driver_a.find_element(:id, "message_area_send_button").click
+		element_b.click
+		element_b.send_keys("No problem!")
+		$driver_b.find_element(:id, "message_area_send_button").click
+		element_a.send_keys("See you later!")
+		$driver_a.find_element(:id, "message_area_send_button").click
+		element_b.send_keys("Ok, bye!")
+		$driver_b.find_element(:id, "message_area_send_button").click
+	rescue
+	end
+  end
+  $driver_a.back
+  $driver_b.back
+end
