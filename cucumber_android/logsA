@@ -1,0 +1,619 @@
+[Appium] Welcome to Appium v1.5.3 (REV 54884cd9ce973527a8a51ea5008ec17cfc8e7847)
+[Appium] Non-default server args:
+[Appium]   port: 5550
+[Appium]   bootstrapPort: 5551
+[Appium]   udid: '192.168.56.101:5555'
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.56.101:5555"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: '192.168.56.101:5555'
+[Appium] Appium REST http interface listener started on 0.0.0.0:5550
+[Appium] Welcome to Appium v1.5.3 (REV 54884cd9ce973527a8a51ea5008ec17cfc8e7847)
+[Appium] Non-default server args:
+[Appium]   port: 5550
+[Appium]   bootstrapPort: 5551
+[Appium]   udid: '192.168.56.101:5555'
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.56.101:5555"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: '192.168.56.101:5555'
+[Appium] Appium REST http interface listener started on 0.0.0.0:5550
+[Appium] Welcome to Appium v1.5.3 (REV 54884cd9ce973527a8a51ea5008ec17cfc8e7847)
+[Appium] Non-default server args:
+[Appium]   port: 5550
+[Appium]   bootstrapPort: 5551
+[Appium]   udid: '192.168.56.101:5555'
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.56.101:5555"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: '192.168.56.101:5555'
+[Appium] Appium REST http interface listener started on 0.0.0.0:5550
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"deviceName":"192.168.56.101:5555","platformName":"Android","appActivity":".Settings","appPackage":"com.android.settings"}}
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"192.168.56....
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   deviceName: '192.168.56.101:5555'
+[Appium]   platformName: 'Android'
+[Appium]   appActivity: '.Settings'
+[Appium]   appPackage: 'com.android.settings'
+[Appium]   udid: '192.168.56.101:5555'
+[BaseDriver] Session created with session id: 80ee1804-548d-4b9f-9ce4-8417940248af
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_60
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[AndroidDriver] Using device: 192.168.56.101:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.56.101:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.android.settings directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","com.android.settings"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 5551 to device: 4724
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","forward","tcp:5551","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.56.101:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.android.settings, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 23
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","start","-n","com.android.settings/.Settings","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 80ee1804-548d-4b9f-9ce4-8417940248af added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webSto...
+[HTTP] <-- POST /wd/hub/session 200 2406 ms - 640 
+[HTTP] --> POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/timeouts/implicit_wait {"ms":0}
+[MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"80ee1804-548d-4b9f-9ce4...
+[debug] [BaseDriver] Set implicit wait to 0ms
+[MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/timeouts/implicit_wait 200 9 ms - 76 
+[HTTP] --> POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"About phone\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"About phone\").instance(0));"}
+[MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","ne...
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"About phone\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"About phone\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"About phone\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"About phone\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("About phone").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("About phone").instance(0));' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("About phone").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().textContains("About phone").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().textContains("About phone").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "About phone"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@2b823e8
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("About phone").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().descriptionContains("About phone").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().descriptionContains("About phone").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "About phone"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@c82a01
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=About phone, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+[HTTP] <-- POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element 200 28375 ms - 87 
+[HTTP] --> POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element/1/click {"{}":""}
+[MJSONWP] Calling AppiumDriver.click() with args: ["1","80ee1804-548d-4b9f-9c...
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element/1/click 200 356 ms - 76 
+[HTTP] --> POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Android version\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Android version\").instance(0));"}
+[MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","ne...
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Android version\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Android version\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Android version\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Android version\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Android version").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("Android version").instance(0));' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Android version").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().textContains("Android version").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().textContains("Android version").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Android version"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("Android version").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().descriptionContains("Android version").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().descriptionContains("Android version").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Android version"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@fcc60a6
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Android version, INSTANCE=0]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+[HTTP] <-- POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element 200 5994 ms - 87 
+[HTTP] --> POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element {"using":"xpath","value":"//android.widget.TextView[preceding-sibling::android.widget.TextView[@text=\"Android version\"]]"}
+[MJSONWP] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget....
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.TextView[preceding-sibling::android.widget.TextView[@text=\"Android version\"]]","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.TextView[preceding-sibling::android.widget.TextView[@text=\"Android version\"]]","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//android.widget.TextView[preceding-sibling::android.widget.TextView[@text="Android version"]]' using 'XPATH' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=5]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+[HTTP] <-- POST /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element 200 88 ms - 87 
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[HTTP] --> GET /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element/3/text {}
+[MJSONWP] Calling AppiumDriver.getText() with args: ["3","80ee1804-548d-4b9f-9c...
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"3"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"3"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"6.0"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.getText() result: "6.0"
+[HTTP] <-- GET /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af/element/3/text 200 10 ms - 77 
+[HTTP] --> DELETE /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af {}
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["80ee1804-548d-4b9f-9ce4-8...
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","com.android.settings"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","io.appium.unlock"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 37.332
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[Appium] Removing session 80ee1804-548d-4b9f-9ce4-8417940248af from our master session list
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/80ee1804-548d-4b9f-9ce4-8417940248af 200 1667 ms - 76 
+[Appium] Welcome to Appium v1.5.3 (REV 54884cd9ce973527a8a51ea5008ec17cfc8e7847)
+[Appium] Welcome to Appium v1.5.3 (REV 54884cd9ce973527a8a51ea5008ec17cfc8e7847)
+[Appium] Non-default server args:
+[Appium] Non-default server args:
+[Appium]   port: 4440
+[Appium]   bootstrapPort: 4441
+[Appium]   udid: '192.168.56.102:5555'
+[Appium]   port: 5550
+[Appium]   bootstrapPort: 5551
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.56.102:5555"}'
+[Appium]   udid: '192.168.56.101:5555'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"192.168.56.101:5555"}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: '192.168.56.102:5555'
+[Appium]   udid: '192.168.56.101:5555'
+[Appium] Appium REST http interface listener started on 0.0.0.0:4440
+[Appium] Appium REST http interface listener started on 0.0.0.0:5550
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"deviceName":"192.168.56.101:5555","platformName":"Android","appActivity":".Settings","appPackage":"com.android.settings"}}
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"192.168.56....
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   deviceName: '192.168.56.101:5555'
+[Appium]   platformName: 'Android'
+[Appium]   appActivity: '.Settings'
+[Appium]   appPackage: 'com.android.settings'
+[Appium]   udid: '192.168.56.101:5555'
+[BaseDriver] Session created with session id: 78a81141-8201-4f7d-8ffd-b012c98c5b33
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_60
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.56.101:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.56.101:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.android.settings directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","pm","list","packages","com.android.settings"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 5551 to device: 4724
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","forward","tcp:5551","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.56.101:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.android.settings, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Loading json...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 23
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","start","-n","com.android.settings/.Settings","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session 78a81141-8201-4f7d-8ffd-b012c98c5b33 added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webSto...
+[HTTP] <-- POST /wd/hub/session 200 2746 ms - 640 
+[HTTP] --> POST /wd/hub/session/78a81141-8201-4f7d-8ffd-b012c98c5b33/timeouts/implicit_wait {"ms":0}
+[MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"78a81141-8201-4f7d-8ffd...
+[debug] [BaseDriver] Set implicit wait to 0ms
+[MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/78a81141-8201-4f7d-8ffd-b012c98c5b33/timeouts/implicit_wait 200 9 ms - 76 
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"deviceName":"192.168.56.102:5555","platformName":"Android","appActivity":".Settings","appPackage":"com.android.settings"}}
+[MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"192.168.56....
+[Appium] Creating new AndroidDriver session
+[Appium] Capabilities:
+[Appium]   deviceName: '192.168.56.102:5555'
+[Appium]   platformName: 'Android'
+[Appium]   appActivity: '.Settings'
+[Appium]   appPackage: 'com.android.settings'
+[Appium]   udid: '192.168.56.102:5555'
+[BaseDriver] Session created with session id: a6f5600d-5785-4d21-b8df-a2b9509dbc3c
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_60
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[AndroidDriver] Using device: 192.168.56.102:5555
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to 192.168.56.102:5555
+[AndroidDriver] App file was not listed, instead we're going to run com.android.settings directly on the device
+[debug] [AndroidDriver] Checking whether package is present on the device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","pm","list","packages","com.android.settings"]
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/io.appium.settings/bin/settings_apk-debug.apk"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","install","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4441 to device: 4724
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","forward","tcp:4441","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-driver/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: -P, 5037, -s, 192.168.56.102:5555, shell, uiautomator, runtest, AppiumBootstrap.jar, -c, io.appium.android.bootstrap.Bootstrap, -e, pkg, com.android.settings, -e, disableAndroidWatchers, false, -e, acceptSslCerts, false
+[debug] [UiAutomator] Moving to state 'online'
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Device API level: 23
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","am","start","-n","com.android.settings/.Settings","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[Appium] New AndroidDriver session created successfully, session a6f5600d-5785-4d21-b8df-a2b9509dbc3c added to master session list
+[MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webSto...
+[HTTP] <-- POST /wd/hub/session 200 5428 ms - 640 
+[HTTP] --> POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/timeouts/implicit_wait {"ms":0}
+[MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"a6f5600d-5785-4d21-b8df...
+[debug] [BaseDriver] Set implicit wait to 0ms
+[MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/timeouts/implicit_wait 200 14 ms - 76 
+[HTTP] --> POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"About phone\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"About phone\").instance(0));"}
+[MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","ne...
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"About phone\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"About phone\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"About phone\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"About phone\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("About phone").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("About phone").instance(0));' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("About phone").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().textContains("About phone").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().textContains("About phone").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "About phone"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@2b8257d
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("About phone").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().descriptionContains("About phone").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().descriptionContains("About phone").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "About phone"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@f823c72
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=About phone, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+[HTTP] <-- POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element 200 29299 ms - 87 
+[HTTP] --> POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element/1/click {"{}":""}
+[MJSONWP] Calling AppiumDriver.click() with args: ["1","a6f5600d-5785-4d21-b8...
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element/1/click 200 1259 ms - 76 
+[HTTP] --> POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element {"using":"-android uiautomator","value":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Android version\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Android version\").instance(0));"}
+[MJSONWP] Calling AppiumDriver.findElement() with args: ["-android uiautomator","ne...
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Android version\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Android version\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"Android version\").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains(\"Android version\").instance(0));","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Android version").instance(0));new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("Android version").instance(0));' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains("Android version").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().textContains("Android version").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().textContains("Android version").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Android version"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing scrollable: new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().descriptionContains("Android version").instance(0))
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: boolean arg: true
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException args: new UiSelector().descriptionContains("Android version").instance(0),
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiScrollable coerce type: class com.android.uiautomator.core.UiObject arg: new UiSelector().descriptionContains("Android version").instance(0)
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "Android version"
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: int arg: 0
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Method name: scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Setting uiObject for scrollIntoView
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoking method: public boolean com.android.uiautomator.core.UiScrollable.scrollIntoView(com.android.uiautomator.core.UiObject) throws com.android.uiautomator.core.UiObjectNotFoundException with: com.android.uiautomator.core.UiObject@b0aa8c3
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Invoke complete.
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CONTAINS_TEXT=Android version, INSTANCE=0]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+[HTTP] <-- POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element 200 6835 ms - 87 
+[HTTP] --> POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element {"using":"xpath","value":"//android.widget.TextView[preceding-sibling::android.widget.TextView[@text=\"Android version\"]]"}
+[MJSONWP] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget....
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.TextView[preceding-sibling::android.widget.TextView[@text=\"Android version\"]]","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"xpath","selector":"//android.widget.TextView[preceding-sibling::android.widget.TextView[@text=\"Android version\"]]","context":"","multiple":false}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding '//android.widget.TextView[preceding-sibling::android.widget.TextView[@text="Android version"]]' using 'XPATH' with the contextId: '' multiple: false
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.TextView, INSTANCE=7]
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+[HTTP] <-- POST /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element 200 410 ms - 87 
+[HTTP] --> GET /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element/3/text {}
+[MJSONWP] Calling AppiumDriver.getText() with args: ["3","a6f5600d-5785-4d21-b8...
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getText","params":{"elementId":"3"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"3"}}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getText
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"6.0"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[MJSONWP] Responding to client with driver.getText() result: "6.0"
+[HTTP] <-- GET /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c/element/3/text 200 21 ms - 77 
+[HTTP] --> DELETE /wd/hub/session/78a81141-8201-4f7d-8ffd-b012c98c5b33 {}
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["78a81141-8201-4f7d-8ffd-b...
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","com.android.settings"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","am","force-stop","io.appium.unlock"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.101:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[Appium] Removing session 78a81141-8201-4f7d-8ffd-b012c98c5b33 from our master session list
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/78a81141-8201-4f7d-8ffd-b012c98c5b33 200 2227 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c {}
+[MJSONWP] Calling AppiumDriver.deleteSession() with args: ["a6f5600d-5785-4d21-b8df-a...
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","am","force-stop","com.android.settings"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","am","force-stop","io.appium.unlock"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","input","keyevent",3]
+[debug] [Logcat] Stopping logcat capture
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+[debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 2 device(s) connected
+[debug] [ADB] Running /Users/ulvisgoldbergs/Library/Android/sdk/platform-tools/adb with args: ["-P",5037,"-s","192.168.56.102:5555","shell","ps","uiautomator"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[Appium] Removing session a6f5600d-5785-4d21-b8df-a2b9509dbc3c from our master session list
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/a6f5600d-5785-4d21-b8df-a2b9509dbc3c 200 2022 ms - 76 
