@@ -21,8 +21,8 @@ options = {
   #'sn_a' => '192.168.56.101:5555',
   #'sn_b' => '192.168.56.102:5555'
 
-  'sn_a' => 'de58458b',
-  'sn_b' => '0915f9dd479e1d05'
+  'sn_a' => 'LGH440n30a10d57',
+  'sn_b' => '3204e457b1c791e9'
 }
 server.start(options)
 # p `nmap -p 5551 localhost`
