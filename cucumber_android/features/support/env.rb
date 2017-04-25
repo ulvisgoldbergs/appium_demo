@@ -21,7 +21,7 @@ options = {
   #'sn_a' => '192.168.56.101:5555',
   #'sn_b' => '192.168.56.102:5555'
 
-  'sn_a' => '0133f2e9e2add266',
+  'sn_a' => 'LGK3505TZPHE99',
   'sn_b' => '079f93fc00f2d3e8'
 }
 server.start(options)
@@ -30,18 +30,16 @@ sleep(10) # TODO replace with serev up validaton
 desired_capabilities_a = {
   'deviceName' => options['sn_a'],
   'platformName' => 'Android',
-  #'appActivity' => '.GridSettings',
-  #'appPackage' => 'com.android.settings'
   'appActivity' => '.Main',
-  'appPackage' => 'com.skype.raider'
+  'appPackage' => 'com.skype.raider',
+  'noReset' => 'True'
 }
 desired_capabilities_b = {
   'deviceName' => options['sn_b'],
   'platformName' => 'Android',
-  #'appActivity' => '.Settings',
-  #'appPackage' => 'com.android.settings'
   'appActivity' => '.Main',
-  'appPackage' => 'com.skype.raider'
+  'appPackage' => 'com.skype.raider',
+  'noReset' => 'True'
 }
 $driver_a = Appium::Driver.new(caps: desired_capabilities_a, appium_lib: { server_url: "http://localhost:#{options['port_a']}/wd/hub" })
 $driver_b = Appium::Driver.new(caps: desired_capabilities_b, appium_lib: { server_url: "http://localhost:#{options['port_b']}/wd/hub" })
