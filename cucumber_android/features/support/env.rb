@@ -16,13 +16,13 @@ server = Server.new
 options = {
   'port_a' => 5550,
   'port_b' => 4440,
-  'portboot_a' => 5551,
-  'portboot_b' => 4441,
+  'portboot_a' => 5531,
+  'portboot_b' => 4431,
   #'sn_a' => '192.168.56.101:5555',
   #'sn_b' => '192.168.56.102:5555'
 
-  'sn_a' => 'LGK3505TZPHE99',
-  'sn_b' => '079f93fc00f2d3e8'
+  'sn_a' => '11160b1d1e803603',
+  'sn_b' => '33009158a0b3b3c3'
 }
 server.start(options)
 # p `nmap -p 5551 localhost`
@@ -30,15 +30,15 @@ sleep(10) # TODO replace with serev up validaton
 desired_capabilities_a = {
   'deviceName' => options['sn_a'],
   'platformName' => 'Android',
-  'appActivity' => '.Main',
-  'appPackage' => 'com.skype.raider',
+  'appActivity' => 'com.skype4life.MainActivity',
+  'appPackage' => 'com.skype.insiders',
   'noReset' => 'True'
 }
 desired_capabilities_b = {
   'deviceName' => options['sn_b'],
   'platformName' => 'Android',
-  'appActivity' => '.Main',
-  'appPackage' => 'com.skype.raider',
+  'appActivity' => 'com.skype4life.MainActivity',
+  'appPackage' => 'com.skype.insiders',
   'noReset' => 'True'
 }
 $driver_a = Appium::Driver.new(caps: desired_capabilities_a, appium_lib: { server_url: "http://localhost:#{options['port_a']}/wd/hub" })

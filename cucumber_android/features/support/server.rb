@@ -6,6 +6,6 @@ class Server
   end
 
   def stop
-    `killall -9 node`
+    # `killall -9 node`
   end
 end
